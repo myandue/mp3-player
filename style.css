@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 667px;
+  width: 750px;
+  background-color: whitesmoke;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: none;
+}
+
+main {
+  background-color: white;
+  width: 40%;
+  margin: 5%;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nowSinger__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.nowSinger__head__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: coral;
+  margin-bottom: 10px;
+  box-shadow: 0px 6px 10px;
+}
+
+h1 {
+  margin: 10px 0px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+h2 {
+  font-size: small;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: x-small;
+  color: gray;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.btn button {
+  width: 90px;
+  padding: 7px 0px;
+  margin: 0px 7px;
+  border-radius: 20px;
+}
+
+.btn button:first-child {
+  background-color: black;
+  color: white;
+}
+
+.btn button:last-child {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  height: 61%;
+  overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  display: flex;
+  margin: 10px 1px;
+  padding: 10px 10px;
+}
+
+.list__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: gold;
+}
+
+.list__contents {
+  width: 75%;
+  padding: 6px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pickedSong {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.list__nowPlayIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: relative;
+  top: -278px;
+  left: 11px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.list__nowPlayIcon div:first-child {
+  width: 5px;
+  height: 10px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.list__nowPlayIcon div:nth-child(2) {
+  width: 5px;
+  height: 20px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.list__nowPlayIcon div:last-child {
+  width: 5px;
+  height: 15px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.nowPlay__bar {
+  position: relative;
+  top: -65px;
+  display: flex;
+  height: 50px;
+  padding: 5px 0px;
+  background-color: black;
+  opacity: 95%;
+  border-radius: 28px;
+}
+
+.nowPlay__bar h2 {
+  color: white;
+}
+
+.nowPlay__bar i {
+  color: white;
+}
+
+.nowPlay__bar div:first-child {
+  width: 60%;
+}
+
+.nowPlay__bar div:last-child {
+  width: 80px;
+  padding: 13px 0px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nowPlay__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.nowPlay__head__image {
+  height: 200px;
+  width: 200px;
+  margin: 30px 0px;
+  background-color: coral;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px;
+}
+
+.nowPlay__playbar {
+  margin: 20px 0px;
+}
+
+.nowPlay__playbar__time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nowPlay__playbar__time div {
+  font-size: x-small;
+  color: gray;
+  opacity: 0.8;
+}
+
+.nowPlay__playbar__bar__alltime {
+  width: 100%;
+  height: 3px;
+  margin: 10px 0px;
+  background-color: gray;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+.nowPlay__playbar__bar__nowtime {
+  width: 70%;
+  height: 3px;
+  margin: 10px 0px;
+  background-color: black;
+  border-radius: 10px;
+  position: relative;
+  top: -13px;
+}
+
+.nowPlay__playbar__bar__icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  left: 69%;
+  top: -28px;
+}
+
+.nowPlay__playIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nowPlay__playIcon div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.fa-retweet,
+.fa-random {
+  color: gray;
+  opacity: 0.3;
+}
+
+.fa-play {
+  color: white;
+  position: relative;
+  left: 3px;
+}
+
+.fa-ellipsis-v {
+  opacity: 0.3;
+}
